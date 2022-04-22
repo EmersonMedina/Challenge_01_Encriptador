@@ -123,6 +123,10 @@ footer {
     font-size: 1.3rem;
 }
 
+.btn-encriptar:active {
+    background-color: black;
+}
+
 .btn-desencriptar {
     background: var(--color-fondo);
     border: 1px solid #0A3871;
@@ -142,6 +146,9 @@ footer {
     font-size: 1.3rem;
 }
 
+.btn-desencriptar:active {
+    background-color: black;
+}
 
 /*Sección mensaje desencriptar*/
 .sect-msj-encriptacion {
@@ -193,6 +200,11 @@ footer {
     font-size: 1.3rem;
 }
 
+.btn-copiar:active {
+    background-color: rgb(31, 190, 31);
+    color: var(--color-secundario);
+    font-size: 1.3rem;
+}
 /*Media Queries*/
 
 /*Tablet*/
