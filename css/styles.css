@@ -201,9 +201,7 @@ footer {
 }
 
 .btn-copiar:active {
-    background-color: rgb(31, 190, 31);
-    color: var(--color-secundario);
-    font-size: 1.3rem;
+    background-color: black;
 }
 /*Media Queries*/
 
