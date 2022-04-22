@@ -21,7 +21,8 @@ let debeSeguirEncriptando = true;
 let debeSeguirDesencriptando = true; 
 
 
-inputTexto[0].addEventListener("keypress", function (event) {
+inputTexto[0].addEventListener("keydown", function (event) {
+    console.log(event);
     if (expRegular.test(event.key) == false) {
         event.preventDefault();
         alert("Ingresar solamente letras minúsculas y sin acentos");
@@ -30,6 +31,16 @@ inputTexto[0].addEventListener("keypress", function (event) {
     }
 })
 
+/*
+inputTexto[0].addEventListener("keypress", function (event) {
+    if (expRegular.test(event.key) == false) {
+        event.preventDefault();
+        alert("Ingresar solamente letras minúsculas y sin acentos");
+    } else {
+        
+    }
+})
+*/
 btnEncriptar.addEventListener("click", function (event) {
     
     event.preventDefault();
@@ -77,7 +88,6 @@ btnDesencriptar.addEventListener("click", function (event) {
         return;    
     }
 
-    //cambiar por foreach 
     for (j = 0; j < inputTexto[0].value.length; j++) {
 
         Desencriptar(inputTexto[0].value[j]);
