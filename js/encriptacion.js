@@ -22,25 +22,12 @@ let debeSeguirDesencriptando = true;
 
 
 inputTexto[0].addEventListener("keydown", function (event) {
-    console.log(event);
     if (expRegular.test(event.key) == false) {
         event.preventDefault();
         alert("Ingresar solamente letras minúsculas y sin acentos");
-    } else {
-        
-    }
+    } 
 })
 
-/*
-inputTexto[0].addEventListener("keypress", function (event) {
-    if (expRegular.test(event.key) == false) {
-        event.preventDefault();
-        alert("Ingresar solamente letras minúsculas y sin acentos");
-    } else {
-        
-    }
-})
-*/
 btnEncriptar.addEventListener("click", function (event) {
     
     event.preventDefault();
@@ -66,6 +53,7 @@ btnEncriptar.addEventListener("click", function (event) {
 
     CrearMensaje(textoEncriptado); 
     
+    window.location.href ="#msj";
 }); 
 
 btnDesencriptar.addEventListener("click", function (event) {
@@ -95,6 +83,7 @@ btnDesencriptar.addEventListener("click", function (event) {
     }
 
     CrearMensaje(textoDesencriptado); 
+    window.location.href ="#msj";
 }); 
 
 function Encriptar (caracter) {
