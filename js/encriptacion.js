@@ -20,10 +20,10 @@ let j;
 let debeSeguirEncriptando = true; 
 let debeSeguirDesencriptando = true; 
 
-
-inputTexto[0].addEventListener("keydown", function (event) {
-    if (expRegular.test(event.key) == false) {
-        event.preventDefault();
+inputTexto[0].addEventListener("input", function (event) {
+    if (expRegular.test(event.data) == false) {
+        let valorTextarea = inputTexto[0].value; 
+        event.target.value = valorTextarea.substring(0, valorTextarea.length - 1);  
         alert("Ingresar solamente letras minúsculas y sin acentos");
     } 
 })
