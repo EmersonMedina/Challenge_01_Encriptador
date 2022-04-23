@@ -218,4 +218,6 @@ function CopiarAPortapapeles() {
         .catch(err => {
         alert('Ocurrió un error al intentar copiar', err);
     })
+
+    window.location.href ="#header";
 }
