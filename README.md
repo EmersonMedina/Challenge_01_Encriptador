@@ -24,3 +24,7 @@ Extras:
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 
 Este proyecto tiene la solución a este desafío. 
+
+Link al modelo en Figma: https://www.figma.com/file/trP3p5nEh7XUyB3n2bomjP/Alura-Challenge---Desafío-1---Lógica?node-id=0%3A1
+
+Link al proyecto en github-pages: https://emersonmedina.github.io/Challenge_01_Encriptador/
